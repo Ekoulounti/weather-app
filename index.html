@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Paytone+One&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd791c7435.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+        <form id="search-form">
+      <div class="form-group">
+        <input
+          type="search"
+          placeholder="Enter city name"
+          autocomplete="off"
+          autofocus="on"
+          id="search-text-input"
+        />
+        <input type="submit" value="search" />
+      </div>
+    </form>
+    <h1 id="city"></h1>
+        <div>
+    <button id="current-location-button">Current location
+      <i class="fas fa-search-location"></i>
+    </button>
+    </div>
+    <br />
+    <br />
+    <div class="temp-today">
+      <div class="card-body">
+        <h3 class="weather-emoji"><i class="fas fa-sun"></i></h3>
+        <br />
+        <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
+                <ul id="humid-wind">
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+            <h4 id="date"><h4></h4>
+        <br />
+        <p id="description"></p>
+        </div>
+    </div>
+    <h2></h2>
+    <div class="next-days">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mon</h5>
+              <p class="card-text">11°<br />1°<br />🌞</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tue</h5>
+              <p class="card-text">12°<br />4°<br />🌞</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wed</h5>
+              <p class="card-text">12°<br />5°<br />🌦</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thur</h5>
+              <p class="card-text">9°<br />2°<br />🌦</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fri</h5>
+              <p class="card-text">8°<br />0°<br />⛅</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <script src="src/app.js"></script>
+  </body>
+</html>
