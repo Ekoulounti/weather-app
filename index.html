@@ -50,35 +50,43 @@
           id="search-text-input"
         />
         <input type="submit" value="search" />
-      </div>
+        </div>
     </form>
-    <h1 id="city"></h1>
-        <div>
-    <button id="current-location-button">Current location
+    <div>
+    <button id="current-location-button">Current
       <i class="fas fa-search-location"></i>
     </button>
     </div>
+    <h1 id="city"></h1>
     <br />
     <br />
     <div class="temp-today">
       <div class="card-body">
-        <h3 class="weather-emoji"><i class="fas fa-sun"></i></h3>
+        <h3 class="weather-emoji">
+          <img src=""
+          alt ="Clear"
+          id="icon">
+          </i></h3>
         <br />
         <span class="temperature" id="temperature"></span
-                ><span class="units">°C</span>
+                ><span class="units">
+                  <a href="" class="active" id="temperature-celsius">ºC</a>
+        |        <a href="" class="fahrenheit-temp" id="temperature-fahrenheit">ºF</a>
+                </span>
                 <ul id="humid-wind">
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
             <h4 id="date"><h4></h4>
-        <br />
-        <p id="description"></p>
+        <div class="temp-description" id="description">
+        Sunny
+      </div>
         </div>
     </div>
     <h2></h2>
     <div class="next-days">
       <div class="row">
-        <div class="col-sm-2">
+        <div class="col-md-3">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Mon</h5>
@@ -86,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-3">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Tue</h5>
@@ -94,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-3">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Wed</h5>
@@ -102,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-3">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Thur</h5>
@@ -110,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-3">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Fri</h5>
@@ -120,8 +128,9 @@
         </div>
       </div>
       </div>
-      <a href="https://github.com/Ekoulounti/weather-app" class=mygit>My GitHub</a>
-      </div>
+      <small>
+          <a href="https://github.com/Ekoulounti/weather-app" class=mygit target="_blank">Open-source code</a> by Evangelia Koulounti
+      </small>
        <script src="src/app.js"></script>
   </body>
 </html>
