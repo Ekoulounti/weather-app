@@ -25,7 +25,7 @@ let h4 = document.querySelector("h4");
       ];
       let month = months[now.getMonth()];
 
-      h4.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}, ${year}`;
+      h4.innerHTML = `${day}, ${hours}:${minutes}`;
 
 function formatDay(timestamp) {
 let date = new Date(timestamp * 1000);
