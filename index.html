@@ -45,12 +45,13 @@
         <input
           type="search"
           placeholder="Enter city name"
+          class="search-bar"
           autocomplete="off"
           autofocus="on"
           id="search-text-input"
         />
-        <input type="submit" value="search" />
-        </div>
+        <input class="search-button" type="submit" value="search"/>
+      </div>
     </form>
     <div>
     <button id="current-location-button">Current
@@ -58,8 +59,6 @@
     </button>
     </div>
     <h1 id="city"></h1>
-    <br />
-    <br />
     <div class="temp-today">
       <div class="card-body">
         <h3 class="weather-emoji">
@@ -84,53 +83,18 @@
         </div>
     </div>
     <h2></h2>
-    <div class="next-days">
-      <div class="row">
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mon</h5>
-              <p class="card-text">11°<br />1°<br />🌞</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tue</h5>
-              <p class="card-text">12°<br />4°<br />🌞</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Wed</h5>
-              <p class="card-text">12°<br />5°<br />🌦</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Thur</h5>
-              <p class="card-text">9°<br />2°<br />🌦</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Fri</h5>
-              <p class="card-text">8°<br />0°<br />⛅</p>
-            </div>
-          </div>
-        </div>
+    <div class="weather-forecast" id="forecast">
       </div>
-      </div>
-      <small>
-          <a href="https://github.com/Ekoulounti/weather-app" class=mygit target="_blank">Open-source code</a> by Evangelia Koulounti
-      </small>
+      <br />
+          <small>
+          <a
+            href="https://github.com/Ekoulounti/weather-app"
+            class="mygit"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Evangelia Koulounti
+        </small>
        <script src="src/app.js"></script>
   </body>
 </html>
